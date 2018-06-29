@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }} - User</title>
+    {% else %}
+    <title>Hello - Man</title>
+    {% endif %}
+</head>
+<body>
+    {% if user %}
+    <h1>Hello,{{ user.name }}!</h1>
+    {% else %}
+    <h1>来啊，快活啊</h1>
+    {% endif %}
+</body>
+</html>
